@@ -1,3 +1,5 @@
+const message = require("../events/message");
+
 module.exports = message => {
     const member = message.mentions.members.first();
 
@@ -42,5 +44,5 @@ module.exports = message => {
     if (num == 5) {
         return message.reply('|----------*|  ==> ' + num);
     }
- 
+    
 };
